@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/vouchers-pagina.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/68a65e991e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../js/javascript.js" />
+    <title>Vouchers</title>
+  </head>
+  <body class="container">
+    <header>
+      <div class="cabecalho">
+        <div class="cab1">
+          <h1>Pros <i class="fa-solid fa-water"></i></h1>
+        </div>
+        <div class="cab2">
+          <nav>
+            <a href="./home-pagina.html">Home</a>
+            <a href="./denuncia-pagina.html">Denúncia</a>
+            <a class="atual" href="./vouchers-pagina.html">Vouchers</a>
+            <a href="./projeto-pagina.html">Projeto incentiva</a>
+          </nav>
+        </div>
+        <div class="cab3">
+          <a href="./integrantes-pagina.html"
+            ><i class="fa-solid fa-user-group"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="conteudo-vouchers">
+        <div class="voucher1">
+          <img
+            src="../img/imagem-mulher-no-aquario.svg"
+            alt="Mulher vendo um Aquario"
+          />
+        </div>
+        <div class="voucher2">
+          <div class="disponiveis">
+            <div class="disp-h1">
+              <h1>Vouchers Disponíveis:</h1>
+            </div>
+            <div class="disp-p">
+              <p><i class="fa-solid fa-fish-fins"></i> 0</p>
+              <p><i class="fa-solid fa-ship"></i> 0</p>
+            </div>
+          </div>
+          <div class="formulario">
+            <h1>Preencha o formulario</h1>
+            <p>Para que seja feita a verificação do seu dieito ao voucher!</p>
+            <div class="dados">
+              <div class="dado1">
+                <div class="dado2">
+                  <label for="inome">Nome</label>
+                  <input
+                    type="text"
+                    placeholder="Digite seu Nome"
+                    name="nome"
+                    id="inome"
+                  />
+                  <label for="icpf">CPF</label>
+                  <input
+                    type="text"
+                    placeholder="Digite seu CPF"
+                    name="cpf"
+                    id="icpf"
+                  />
+                </div>
+                <div class="dado3">
+                  <label for="itel">Telefone</label>
+                  <input
+                    type="tel"
+                    placeholder="Digite seu telefone"
+                    name="telefone"
+                    id="itel"
+                    class="telefone"
+                  />
+                  <label for="iemail">Email</label>
+                  <input
+                    type="email"
+                    placeholder="Digite seu email"
+                    name="email"
+                    id="iemail"
+                    class="email"
+                  />
+                </div>
+              </div>
+              <label for="idesc">Descrição</label>
+              <input
+                type="text"
+                placeholder="Descrição da reciclagem (Materiais)"
+                name="descricao"

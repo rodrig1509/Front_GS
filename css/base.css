@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "urbanist", sans-serif;
+    font-weight: 600;
+}
+html, body{
+    background-color: #FFF;
+}
+:root{
+    --azul-claro: #5686E1;
+    --azul-escuro: #044572;
+ 
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container main{
+    flex: 1 1 0;
+}
+.cabecalho{
+    display: flex;
+    background-color: #FFF;
+    align-items: center;
+    padding: 1.5rem;
+}
+.cabecalho .cab1{
+    margin-right: auto;
+    width: 8rem;
+}
+.cabecalho .cab3{
+    margin-left: auto;
+    width: 8rem;
+    text-align: right;
+}
+.cabecalho h1, .cabecalho i{
+    font-size: 2rem;
+    color: #5686E1;
+}
+ 
+.cabecalho nav a{
+    padding: 0 0.6rem;
+    text-decoration: none;
+    color: #5686E1;
+    transition: 0.5s ease;
+    font-size: 1rem;
+}
+.cabecalho nav a:hover{
+    font-size: 1.15rem;
+}
+.cabecalho a{
+    transition: 0.5s ease;
+}
+.cabecalho a:hover{
+    transform: scale(1.2);
+}
+.rodape{
+    padding: 1.5rem 1rem;
+    background-color: #031A29;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+   
+}
+.rodape .direitos .pros{
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+}
+.rodape .direitos p{
+    font-weight: 100;
+    font-size: 0.9rem;
+   
+}
+.rodape .instagram{
+    margin-left: auto;
+    font-weight: 100;
+}
+.container .cabecalho .atual{
+    text-decoration: underline 2px;
+}
+ 
+@media screen and (max-width:768px){
+    .cabecalho{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+   
+        grid-template-areas:
+        "cab1 cab3"
+        "cab2 cab2";
+    }
+    .cab1{
+        grid-area: cab1;
+    }
+    .cab3{
+        order: 1;
+        grid-area: cab3;
+    }
+    .cab2{
+        order: 2;
+        grid-area: cab2;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+   
+    }
+   
+}
+@media screen and (max-width:500px){
+    .rodape{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+         "direitos"
+         "instagram";
+    }
+    .rodape .direitos{
+        width: 100%;
+        grid-area: direitos;
+    }
+    .rodape .instagram{
+        text-align: left;
+        grid-area: instagram;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+@media screen and (max-width:460px){
+    .cabecalho nav a{
+        font-size: 0.8rem;
+    }
+    .cabecalho h1, .cabecalho i{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:395px){
+    .cabecalho nav{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        display: flex;
+    }
+    .cabecalho nav a{
+        display: flex;
+    }
+ 
+}

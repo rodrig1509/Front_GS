@@ -1,0 +1,229 @@
+.conteudo-denuncia .img-denuncia{
+    background-image: url(../img/imagem-lixo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 100% bottom;
+    width: 100%;
+    height: 30vh;
+}
+.text-denuncia{
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    grid-template-rows: auto auto;
+    width: 100%;
+    font-size: 1.49rem;
+    color: #044572;
+}
+.cont-denun1{
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+.cont-denun2{
+    width: 50%;
+    height: 45vh;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px;  
+}
+.cont-denun2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.cont-denun3{
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+.cont-denun4{
+    margin-left: 4rem;
+    margin-top: 3rem;
+    margin-right: 4rem;
+    margin-bottom: 8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+ 
+.cont-denun4 h1{
+    font-size: 2rem;
+    text-align: center;
+   
+}
+.cont-denun4 button{
+    background-color: #044572;
+    cursor: pointer;
+    color: #FFF;
+    border: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    transition: 0.5s;
+}
+.cont-denun4 button:hover{
+    transform: scale(1.1);
+    background-color: #5686E1;
+}
+.cont-denun4 button:hover i{
+    color: red;
+}
+ 
+.modal-container{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0000004b;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+ 
+.modal{
+    height: 80%;
+    grid-template-columns: 1fr;
+    background-color: rgb(238, 238, 238);
+    padding: 50px;
+    border-radius: 10px;
+    margin: 1rem;
+    box-shadow: 0px 5px 15px;
+}
+.modal form{
+    display: flex;
+    flex-direction: column;
+   
+}
+.modal form input{
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 2px solid #5085aa;
+    font-size: 0.8rem;
+}
+.modal #nome, #cpf, #telefone{
+    width: 30%;
+}
+.modal #descricao, #endereco{
+    width: 60%;
+}
+.modal form label{
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+ 
+#show-more{
+    position: absolute;
+    color: #FFF;
+    cursor: pointer;
+    border: 1px solid red;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+ 
+.modal-container.mostrar{
+    display: flex;
+}
+.modal a{
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #044572;
+    color: #FFF;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    transition: 0.5s;
+}
+.modal a:hover{
+    transform: scale(1.1);
+    background-color: #5686E1;
+}
+.modal .denun-enviar{
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+ 
+ 
+@media screen and (max-width:768px){
+    .conteudo-denuncia .img-denuncia{
+        width: 0%;
+        background-image: none;
+        height: 0%;
+        display: none;
+    }
+}
+@media screen and (max-width:700px){
+    .conteudo-denuncia .cont-denun1 .conteudo-denuncia .cont-denun3 p{
+        font-size: 1.3rem;
+    }
+    .cont-denun2 img{
+        height: 200px;
+    }
+    .cont-denun2{
+        height: 200px;
+    }
+    .cont-denun4 h1{
+        font-size: 1.7rem;
+    }
+    .cont-denun4 button{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width:425px){
+    .cont-denun2 img{
+        height: 180px;
+    }
+    .cont-denun2{
+        height: 180px;
+    }
+    .conteudo-denuncia .cont-denun1 p, .conteudo-denuncia .cont-denun3 p{
+        font-size: 1.1rem;
+    }
+    .cont-denun4 h1{
+        font-size: 1.4rem;
+    }
+}
+ 
+ 
+@media screen and (max-width:560px){
+    .modal form label{
+        font-size: 1rem;
+       
+    }
+}
+   
+@media screen and (max-width:375px){
+    .cont-denun2 img{
+        height: 150px;
+    }
+    .cont-denun2{
+        height: 150px;
+    }
+    .conteudo-denuncia .cont-denun1 p, .conteudo-denuncia .cont-denun3 p{
+        font-size: 1rem;
+    }
+    .cont-denun4 h1{
+        font-size: 1.2rem;
+    }
+    .modal a{
+        font-size: 1rem;
+    }
+}
+ 
+@media screen and (max-width:320px){
+    .cont-denun2 img{
+        height: 130px;
+    }
+    .cont-denun2{
+        height: 130px;
+    }
+    .cont-denun4 h1{
+        font-size: 1.1rem;
+    }
+}

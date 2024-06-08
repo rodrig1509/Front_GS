@@ -1,0 +1,260 @@
+.conteudo-projeto .img-projeto{
+    background-image: url(../img/imagem-reciclagem.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 30vh;
+}
+.text-projeto{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    width: 100%;
+}
+.text-projeto .cont-projeto1{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.text-projeto .cont-projeto2{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-projeto .cont-projeto3{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-projeto .cont-projeto4{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+ 
+/*CONTEUDO PROJETO1*/
+.conteudo-projeto .cont-projeto1 p{
+    color: #044572;
+    font-size: 1.5rem;
+}
+ 
+/*CONTEUDO PROJETO2*/
+.conteudo-projeto .cont-projeto2 h1{
+    text-decoration: underline 2px;
+    font-size: 3rem;
+    background: linear-gradient(to right, #5686E1, #044572);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ 
+/*CONTEUDO PPROJETO3*/
+.conteudo-projeto .cont-projeto3 h1{
+    text-decoration: underline 2px;
+    font-size: 3rem;
+    background: linear-gradient(to right, #044572, #5686E1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*CONTEUDO PROJETO4*/
+.conteudo-projeto .cont-projeto4 p{
+    color: #044572;
+    font-size: 1.5rem;
+}
+/*BOTAO PROJETO*/
+.conteudo-projeto .btn-projeto{
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}
+.conteudo-projeto  .btn-projeto a{
+    background-color: #044572;
+    cursor: pointer;
+    color: #FFF;
+    border: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.conteudo-projeto .btn-projeto a:hover{
+    transform: scale(1.1);
+    background-color: #5686E1;
+   
+}
+.conteudo-projeto .btn-projeto a:hover i{
+    color: rgb(29, 182, 29);
+}
+ 
+/*RECOMPENSAS PROJETO*/
+.conteudo-projeto .h1-projeto{
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+.conteudo-projeto .h1-projeto h1{
+    color: #044572;
+    font-size: 2rem;
+}
+.conteudo-projeto .info-projeto{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.conteudo-projeto .info1, .info2, .info3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 6rem;
+    box-shadow: 0px 5px 15px;
+    transition: 0.5s;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    height: auto;
+}
+.conteudo-projeto .h1{
+    border: 2px solid #646464;
+    width: 100%;
+}
+.conteudo-projeto .p{
+    border: 2px solid #646464;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 10px 10px;
+}
+.conteudo-projeto .info1:hover p, .info2:hover p, .info3:hover p{
+    color: #FFF;
+}
+.conteudo-projeto .info1:hover, .info2:hover, .info3:hover{
+    background-color: #044572;
+}
+.conteudo-projeto .info1 p:hover, .info2 p:hover, .info3 p:hover{
+    color: #FFF;
+}
+ 
+.conteudo-projeto .info1 p, .info2 p, .info3 p{
+    padding: 0.5rem;
+    color: #044572;
+    transition: 0.5s;
+}
+.conteudo-projeto .info1 h1, .info2 h1, .info3 h1{
+    text-align: center;
+    color: #044572;
+    background-color: #FFF;
+    padding: 0.5rem;
+    transition: 0.5s;
+}
+.conteudo-projeto .info3 h1{
+    font-size: 1.5rem;
+}
+ 
+@media screen and (max-width:990px){
+    .conteudo-projeto .info1 p, .info2 p, .info3 p{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width:768px){
+    .conteudo-projeto .img-projeto{
+        width: 0%;
+        background-image: none;
+        height: 0%;
+    }
+    .conteudo-projeto .cont-projeto1 p, .conteudo-projeto .cont-projeto4 p{
+        font-size: 1rem;
+    }
+    .conteudo-projeto .cont-projeto2 h1, .conteudo-projeto .cont-projeto3 h1{
+        font-size: 2rem;
+    }
+    .conteudo-projeto  .btn-projeto a{
+        font-size: 1.2rem;
+    }
+    .conteudo-projeto .h1-projeto h1{
+        font-size: 1.5rem;
+    }
+    .conteudo-projeto .info1 p, .info2 p, .info3 p{
+        font-size: 0.9rem;
+    }
+   
+}
+@media screen and (max-width:700px){
+    .conteudo-projeto .info-projeto{
+        display: grid;
+        grid-template-columns: repeat(1,3fr);
+    }
+    .conteudo-projeto .info1, .info2, .info3{
+        margin-left: 30vw;
+        margin-right: 30vw;
+    }
+}
+@media screen and (max-width:530px){
+    .conteudo-projeto .cont-projeto1 p, .conteudo-projeto .cont-projeto4 p{
+        font-size: 0.8rem;
+    }
+    .conteudo-projeto .cont-projeto2 h1, .conteudo-projeto .cont-projeto3 h1{
+        font-size: 1.7rem;
+    }
+    .conteudo-projeto .h1-projeto h1{
+        font-size: 1.2rem;
+    }
+    .conteudo-projeto  .btn-projeto a{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width:425px){
+    .text-projeto{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-projeto .cont-projeto1{
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        margin-right: 2rem;
+    }
+    .text-projeto .cont-projeto2{
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        margin-right: 2rem;
+    }
+    .text-projeto .cont-projeto3{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .text-projeto .cont-projeto4{
+        margin-top: 1rem;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+    }
+    .conteudo-projeto .h1-projeto h1{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:405px){
+    .conteudo-projeto .h1-projeto h1{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width:375px){
+    .conteudo-projeto .h1-projeto h1{
+        font-size: 0.9rem;
+    }
+}
+
+ 

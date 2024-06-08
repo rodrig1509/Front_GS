@@ -1,0 +1,224 @@
+main{
+    display: flex;
+    align-items: center;
+   
+}
+.conteudo-vouchers{
+    display: flex;
+    width: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 5px 15px;
+    background-color: transparent;
+    border-radius: 5px;
+    height: auto;
+ 
+}
+.voucher1{
+    background-color: #5686E1;
+    width: 40%;
+    height: auto;
+    border-radius: 5px 0px 0px 5px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+ 
+}
+.voucher1 img{
+    width: 30vw;
+    position: absolute;
+   
+}
+.voucher2{
+    background-color: rgb(238, 238, 238);
+    width: 60%;
+    height: auto;
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    position: relative;
+}
+.disponiveis{
+    display: inline-block;
+    flex-direction: column;
+ 
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    color: #044572;
+   
+}
+.disp-h1{
+    font-size: 0.6rem;
+    text-align: center;
+}
+.disp-p{
+    font-size: 1.4rem;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3.5rem;
+    align-self: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.formulario h1{
+    font-size: 1.6rem;
+    color: #044572;
+   
+}
+.formulario p{
+    font-size:1rem;
+    color: #5686E1;
+}
+.formulario label{
+    color: #044572;
+    margin-top: 1rem;
+}
+.formulario input::placeholder{
+    color: #5c6e8d;
+}
+.formulario input{
+    width: 8rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 2px solid #5085aa;
+    font-size: 0.8rem;
+    position: relative;
+}
+.formulario .peso{
+    width: 7.2rem;
+}
+.formulario .descricao{
+    width: 21.5rem;
+    height: 6rem;
+}
+.dados{
+    display: flex;
+    flex-direction: column;
+}
+.dado1{
+    display: flex;
+    gap: 4rem;
+   
+}
+.dado2, .dado3{
+    display: flex;
+    flex-direction: column;
+}
+.dado4{
+    display: flex;
+}
+.dado5{
+    display: flex;
+    flex-direction: column;
+}
+.dado6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.dado6 a{
+    background-color: #044572;
+    color: #FFF;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-left: 3rem;
+    margin-top: 2.2rem;
+    width: 11rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.dado6 a:hover{
+    background-color: rgb(29, 170, 29);
+    color: black;
+   
+}
+@media screen and (max-width:950px){
+    .formulario{
+        margin-top: 5rem;
+        margin-bottom: 1.5rem;
+    }
+   
+}
+@media screen and (max-width:850px){
+    .voucher1{
+        display: none;
+        width: 0%;
+    }
+    .voucher2{
+        width: 100%;
+        border-radius: 5px;
+    }
+    .formulario{
+        margin-top: 3rem;
+    }
+}
+@media screen and (max-width:590px){
+    .formulario{
+        margin-top: 5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+@media screen and (max-width:466px){
+    .dado1{
+        gap: 1.4rem;
+       
+    }
+    #idesc{
+        width: 18.5rem;
+ 
+    }
+}
+@media screen and (max-width:456px){
+    .dado4{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dado4 a{
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    .dado5{
+        margin: 0 auto;
+    }
+ 
+}
+@media screen and (max-width:428px){
+    .dado1{
+        flex-direction: column;
+    }
+    #idesc{
+        width: 15rem;
+ 
+    }
+    .formulario h1{
+        font-size: 1.5rem;
+       
+    }
+    .formulario p{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width:354px){
+    #idesc{
+        width:13rem;
+ 
+    }
+    .formulario input{
+        width: 13rem;
+    }
+}
